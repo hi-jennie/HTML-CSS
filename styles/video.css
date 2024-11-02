@@ -1,0 +1,95 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.video-preview {
+  background-color:white;
+}
+
+.video-image {
+  position: relative;
+}
+.image {
+  
+  width: 100%; /* width: 400px;控制图片的宽度 会自适应高度 */
+  /* width: 100%; 占据container的100% */
+}
+
+.video-time {
+  position:absolute;
+  background-color: black;
+  color: white;
+  bottom: 8px;
+  right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  width: max-content; /* 使得宽度自适应 */
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.video-title {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.video-author,
+.video-stats {
+  color: rgb(96,96,96);
+  font-size: 12px;
+}
+
+.video-author{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.video-stats{
+  margin-top: 5px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 10px;
+  
+}
+.channel-picture {
+  background-color: white;
+   /* border-radius: 50px;控制图片的圆角  但是这个元素是一个container，所以不能设置在container上，这个其实没有效果*/
+}
+.video-info {
+  display: inline-block;
+  background-color: white;
+  margin-top: 0 ;
+  
+}
+
+.picture {
+  border-radius: 50px;
+  width: 40px;
+}

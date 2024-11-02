@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Practice</title>
+  </head>
+  <body style="padding-bottom: 500px;">
+    <div style="
+      display:flex;
+      margin-top: 30px;
+      flex-direction: row; 
+      ">
+      <div style="background-color: lightblue;">
+        div1 text 往后面加内容会自动调整宽度
+      </div>
+
+      <div style="background-color: lightpink;">
+        div2 text <p>加上一段p或自动下一行</p>
+      </div>
+    </div>
+
+
+    <div style="
+      display:flex;
+      margin-top: 30px;
+      flex-direction: row; 
+      ">
+      <div style="background-color: lightblue; width:100px">
+        width 100px
+      </div>
+
+      <div style="background-color: lightpink; flex: 1">
+        flex: 1
+      </div>
+    </div>
+
+    <div style="
+      display:flex;
+      margin-top: 30px;
+      flex-direction: row; 
+      ">
+      <div style="background-color: lightpink; flex: 1;">
+        flex: 1
+      </div>
+      <div style="background-color: lightgreen; width:100px;">
+        width 100px
+      </div>
+      <div style="background-color: lightblue; flex: 2;">
+        flex: 2
+      </div>
+    </div>
+
+    <div style="
+      display:flex;
+      height: 70px;
+      border-width: 1px;
+      border-color: gray;
+      border-style: solid;
+      margin-top: 30px;
+      flex-direction: row;
+      justify-content: end; 
+      ">
+      <div style="background-color: lightpink; width: 100px;">
+        flex: 1
+      </div>
+      <div style="background-color: lightsalmon; width:100px;">
+        width 100px
+      </div>
+      <div style="background-color: lightblue; width: 100px;">
+        flex: 2
+      </div>
+    </div>
+
+
+    <p>justify-content: space-between;</p>
+    <div style="
+      display:flex;
+      height: 70px;
+      border-width: 1px;
+      border-color: gray;
+      border-style: solid;
+      margin-top: 30px;
+      flex-direction: row;
+      justify-content: space-between; 
+      ">
+      
+      <div style="background-color: lightpink; width: 100px;">
+        flex: 1
+      </div>
+      <div style="background-color: lightsalmon; width:100px;">
+        width 100px
+      </div>
+      <div style="background-color: lightblue; width: 100px;">
+        flex: 2
+      </div>
+    </div>
+
+    <p>vertical display align-items: start;</p>
+    <div style="
+      display:flex;
+      height: 70px;
+      border-width: 1px;
+      border-color: gray;
+      border-style: solid;
+      margin-top: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start; 
+      ">
+      
+      <div style="background-color: lightpink; width: 100px;">
+        flex: 1
+      </div>
+      <div style="background-color: lightsalmon; width:100px;">
+        width 100px
+      </div>
+      <div style="background-color: lightblue; width: 100px;">
+        flex: 2
+      </div>
+    </div>
+
+    <div style="
+      display:flex;
+      height: 70px;
+      border-width: 1px;
+      border-color: gray;
+      border-style: solid;
+      margin-top: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch; 
+      ">
+      
+      <div style="background-color: lightpink; width: 100px;">
+        flex: 1
+      </div>
+      <div style="background-color: lightsalmon; width:100px;">
+        width 100px
+      </div>
+      <div style="background-color: lightblue; width: 100px;">
+        flex: 2
+      </div>
+    </div>
+  </body>
+</html>

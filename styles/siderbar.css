@@ -1,0 +1,36 @@
+.sidebar {
+  background-color: white;
+  position: fixed;
+  top: 55px;
+  left:0;
+  bottom:0;
+  width: 80px;
+  z-index: 200;
+}
+
+.sidebar-link {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  justify-content: center; /* center the content */
+  flex-direction: column; /* making the items inside the box display vertically*/
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(235,235,235);
+  
+}
+
+/*sidebar-link img represents that we target all the img inside sidebar-link*/
+.sidebar-link img {
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.sidebar-link div {
+  font-size: 12px;
+  margin-right: 25px;
+  margin-left: 25px;
+  font-weight: 500;
+}
